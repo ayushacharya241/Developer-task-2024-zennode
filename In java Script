@@ -1,0 +1,33 @@
+function calculateTotalPrice(quantity, price) {
+    return quantity * price;
+}
+
+function calculateDiscounts(cart, quantities) {
+    // Implement discount logic here
+    return { discountName, discountAmount };
+}
+
+function calculateShippingFee(quantities) {
+    // Calculate shipping fee
+    // ...
+}
+
+function calculateGiftWrapFee(quantities) {
+    // Calculate gift wrap fee
+    // ...
+}
+
+function main() {
+    let quantities = {'Product A': 0, 'Product B': 0, 'Product C': 0};
+    // Get quantities for each product
+    // ...
+
+    let prices = {'Product A': 20, 'Product B': 40, 'Product C': 50};
+    let subtotal = {};
+    for (let product in quantities) {
+        subtotal[product] = calculateTotalPrice(quantities[product], prices[product]);
+    }
+
+    let { discountName, discountAmount } = calculateDiscounts(subtotal, quantities);
+    let shippingFee = calculateShippingFee(quantities);
+    let giftWrapFee = calculateGiftWrap
